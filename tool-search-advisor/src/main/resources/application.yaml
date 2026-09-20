@@ -1,0 +1,16 @@
+# Spring
+spring:
+  application:
+    name: tool-search-advisor
+  ai:
+    google:
+      genai:
+        api-key: ${GOOGLE_GENAI_API_KEY}
+        chat:
+          model: ${GOOGLE_GENAI_CHAT_MODEL}
+
+# Log
+logging:
+  level:
+    org.springframework.ai.model.tool.DefaultToolCallingManager: debug
+
