@@ -1,0 +1,21 @@
+# Spring
+spring:
+  application:
+    name: tool-search
+  ai:
+    google:
+      genai:
+        api-key: ${GOOGLE_GENAI_API_KEY}
+        chat:
+          model: ${GOOGLE_GENAI_MODEL}
+    chat:
+      client:
+        tool-search-advisor:
+          enabled: true
+          tool-index-type: lucene
+
+logging:
+  level:
+    org:
+      springframework:
+        ai: debug
